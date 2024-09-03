@@ -1,11 +1,13 @@
-function App() {
+import Mainheader from "./Mainheader";
+import Footermain from "./Footermain";
+import Containermain from "./Containermain";
+
+export default function App() {
   return (
-    <>
-      <main>
-        <h1>Something here</h1>
-      </main>
-    </>
+    <main>
+      <Mainheader />
+      <Containermain />
+      <Footermain />
+    </main>
   );
 }
-
-export default App;
