@@ -20,15 +20,19 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: -1;
-  height: 254px;
+  height: 34rem;
   width: 100%;
   background-image: linear-gradient(
       to right,
-      rgba(101, 0, 163, 0.9),
-      rgba(24, 120, 175, 0.9)
+      rgba(42, 0, 68, 0.272),
+      rgba(19, 95, 139, 0.182)
     ),
-    url("https://images.unsplash.com/photo-1546453667-8a8d2d07bc20?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=100");
+    url("https://plus.unsplash.com/premium_photo-1661443781814-333019eaad2d?q=80&w=1902&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
 
 .first-heading {
