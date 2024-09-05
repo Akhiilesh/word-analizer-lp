@@ -20,10 +20,6 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
   z-index: -1;
   height: 34rem;
   width: 100%;
@@ -50,9 +46,9 @@ body {
 
 .container {
   width: 1050px;
-  height: 520px;
-  background-color: #fff;
-  border-radius: 10px;
+  height: 60vh;
+  background-color: #f5f2ed;
+  border-radius: 0.5rem;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
   margin-top: 55px;
   display: flex;
