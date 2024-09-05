@@ -1,5 +1,5 @@
 function Background() {
-  return <div className="background"></div>;
+  return <div></div>;
 }
 
 export default Background;
