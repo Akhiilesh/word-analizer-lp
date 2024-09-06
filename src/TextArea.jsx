@@ -25,7 +25,7 @@ function TextArea() {
         placeholder="Enter your text..."
         spellCheck="false"
       />
-      {warningText ? <Warning warningText={warningText} /> : null}
+      <Warning warningText={warningText} />
     </div>
   );
 }
