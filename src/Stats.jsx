@@ -2,15 +2,15 @@
 export default function Stats() {
   return (
     <section className="stats">
-      <Stat lable={"Words"} num={"0"} />
-      <Stat lable={"Characters"} num={"0"} />
+      <Stat lable={"Words"} />
+      <Stat lable={"Characters"} />
       <Stat lable={"Instagram"} num={"280"} />
       <Stat lable={"FaceBook"} num={"2200"} />
     </section>
   );
 }
 
-function Stat({ lable, num }) {
+function Stat({ lable, num = 0 }) {
   return (
     <section className="stat">
       <span className="stat__number">{num}</span>
