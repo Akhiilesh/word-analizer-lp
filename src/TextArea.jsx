@@ -13,6 +13,8 @@ function TextArea() {
     } else if (newText.includes("@")) {
       setWarningText("No @ Symbol Allowed!");
       newText = newText.replace("@", "");
+    } else {
+      setWarningText("");
     }
     setText(newText);
   };
