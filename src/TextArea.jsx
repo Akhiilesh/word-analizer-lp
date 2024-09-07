@@ -1,11 +1,8 @@
 import { useState } from "react";
 import Warning from "./Warning";
 
-function TextArea() {
-  const [text, setText] = useState("");
+function TextArea({ text, setText }) {
   const [warningText, setWarningText] = useState("");
-
-  const numberOfChar = text.length;
 
   const handleChange = (e) => {
     let newText = e.target.value;
@@ -19,7 +16,6 @@ function TextArea() {
       setWarningText("");
     }
     setText(newText);
-    console.log(numberOfChar);
   };
 
   return (

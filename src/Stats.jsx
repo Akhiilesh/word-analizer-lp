@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
-export default function Stats() {
+export default function Stats({ numofChar }) {
   return (
     <section className="stats">
       <Stat lable={"Words"} num={0} />
-      <Stat lable={"Characters"} num={0} />
+      <Stat lable={"Characters"} num={numofChar} />
       <Stat lable={"Instagram"} num={"280"} />
       <Stat lable={"FaceBook"} num={"2200"} />
     </section>
