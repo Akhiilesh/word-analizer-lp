@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Warning from "./Warning";
 
+// eslint-disable-next-line react/prop-types
 function TextArea({ text, setText }) {
   const [warningText, setWarningText] = useState("");
 
