@@ -5,6 +5,8 @@ function TextArea() {
   const [text, setText] = useState("");
   const [warningText, setWarningText] = useState("");
 
+  const numberOfChar = text.length;
+
   const handleChange = (e) => {
     let newText = e.target.value;
     if (newText.includes("<script>")) {
@@ -17,6 +19,7 @@ function TextArea() {
       setWarningText("");
     }
     setText(newText);
+    console.log(numberOfChar);
   };
 
   return (
