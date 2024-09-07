@@ -1,16 +1,11 @@
 /* eslint-disable react/prop-types */
-export default function Stats({
-  numofChar,
-  instaCharLeft,
-  facebookCharLeft,
-  countWords
-}) {
+export default function Stats({ stats }) {
   return (
     <section className="stats">
-      <Stat lable={"Words"} num={countWords} />
-      <Stat lable={"Characters"} num={numofChar} />
-      <Stat lable={"Instagram"} num={instaCharLeft} />
-      <Stat lable={"FaceBook"} num={facebookCharLeft} />
+      <Stat lable={"Words"} num={stats.countWords} />
+      <Stat lable={"Characters"} num={stats.numofChar} />
+      <Stat lable={"Instagram"} num={stats.instaCharLeft} />
+      <Stat lable={"FaceBook"} num={stats.facebookCharLeft} />
     </section>
   );
 }

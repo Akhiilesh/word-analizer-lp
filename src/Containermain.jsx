@@ -9,15 +9,17 @@ export default function Containermain() {
   const facebookCharLeft = 2200 - text.length;
   const countWords = text.split(/\s/).filter((word) => word !== "").length;
 
+  const stats = {
+    numofChar: numofChar,
+    instaCharLeft: instaCharLeft,
+    facebookCharLeft: facebookCharLeft,
+    countWords: countWords
+  };
+
   return (
     <main className="container">
       <TextArea text={text} setText={setText} />
-      <Stats
-        numofChar={numofChar}
-        instaCharLeft={instaCharLeft}
-        facebookCharLeft={facebookCharLeft}
-        countWords={countWords}
-      />
+      <Stats stats={stats} />
     </main>
   );
 }
